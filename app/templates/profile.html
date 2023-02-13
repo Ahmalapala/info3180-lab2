@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+<!--{% block css %}
+<link rel = "stylesheet" type = "text/css" href = "{{url_for('static' , filename='css/app.css') }}">
+{% endblock %}-->
+
+{% block main %}
+
+<section class="prof">
+    <div class="profile">
+        <h1>Mary Jane</h1>
+        <img src="{{url_for('static', filename='person-emoji.png' )}}" alt="image of dark skinned emoji" width="100px" height="100px">
+    
+        <div class="info">
+            <h4>mjane</h4>
+            <h4>Kingston, Jamaica</h4>
+            <h4>{{ date_joined }}</h4>
+            <p class="bio">I am smart and talented young woman who loves website design and dvelopment. 
+                Contact me if you'd like to work together on a new project.</p>
+        </div>
+    </div>
+
+    <div class="stats">
+        <ul class="post">
+            <li class="content">
+                <p class="val">7</p>
+                <p class="name">Posts</p>
+            </li>
+
+            <li class="content">
+                <p class="val">100</p>
+                <p class="name">Following</p>
+            </li>
+
+            <li class="content">
+                <p class="val">250</p>
+                <p class="name">Followers</p>
+            </li>
+        </ul>
+    </div>
+            <button> Follow </button>
+    </div>
+</section>
+
+{% endblock %}
